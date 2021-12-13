@@ -37,7 +37,6 @@ test("renders default image when image is not defined", ()=>{
     }}/>)
 
     const img = screen.queryByRole('img')
-    console.log('here', img)
 
-    expect(img).toEqual('https://i.ibb.co/2FsfXqM/stranger-things.png')
+    expect(img).toHaveProperty('src','https://i.ibb.co/2FsfXqM/stranger-things.png')
 });
